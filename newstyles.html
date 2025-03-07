@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minnesota Seasons</title>
+	<style>
+			img  {
+		width: 100%;
+		height: auto;
+		max-height: 200px;  
+		object-fit: cover;
+		}
+		
+			.img {
+		width: 30%;
+		height: auto;
+		max-height: 700px;
+		}
+		
+		
+			section {
+		color: black;
+		padding: 20px;
+		margin: 20px;
+		margin-top: 30px;
+		background-image: url("https://wallpapers.com/images/featured/dark-wood-background-0cyh8iq1d71hnwi9.jpg");
+		border-radius: 2px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		width: 70%;
+		}
+		
+		.title-box {
+            background-color: #412920; 
+            color: white; 
+            padding: 20px; 
+            max-width: 60%; 
+            margin: 20px auto; 
+            text-align: center; 
+            border-radius: 4px; 
+		}	
+		
+		a 		{
+			color: #e6ccb3;
+			font-family: Verdana;
+			font-size: 24px;
+			text-decoration: none;
+			margin-right:50px;
+		}	
+	a:hover {
+			color: #996633;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+		
+		h1 {
+      margin: 2%;
+      font-size: 2.8em;
+	  font-family: Verdana;
+	  color: white;
+    }
+	
+	.container {
+            display: grid;
+            grid-template-columns: 1fr 4fr 4fr;
+			gap: 1px;
+	}
+	
+	.double {border-style: double;
+			 border-width: 10px;
+			 border-color: black;
+			 padding: 20px;
+			}
+	
+	p {color: white;
+		font-size: 20px;
+	   }
+	   
+	   
+ /* search bar*/	   
+	   
+	   .search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 25px 0 0 25px;  
+  outline: none;
+  width: 60%;
+  max-width: 400px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 0 25px 25px 0; 
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+	</style>
+</head>
+  <body style="background-color:black;">
+      <img src = "https://www.exploreminnesota.com/sites/default/files/2019-09/Fall%20colors%20on%20the%20St.%20Louis%20River%20runs%20%20-%20william%20wensel%20%20%20EARLY%20to%20MID%20Duluth%20Area.jpg" alt= "top image">
+	  
+	  <header>
+		<div class="title-box">
+		<h1>Minnesota Seasons</h1>
+			<a href="#overview" onclick="return false;" class="selected">Overview</a></li>
+			<a href="#season" onclick="return false;">Season</a></li>
+			<a href="#recentUploads" onclick="return false;">Recent Uploads</a></li>
+			<a href="#newPages" onclick="return false;">New Pages</a></li>
+			<a href="#whatsNext" onclick="return false;">What‘s Next</a></li>
+		</div>
+		</header>
+		
+		
+	<!-- search bar -->	
+		
+		<div class="search-container">
+    <form id="form">
+      <input type="text" id="query" placeholder="Search...">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('form');
+    const query = document.getElementById('query');
+    const google = 'https://www.google.com/search?q=site%3A+';
+    const site = 'minnesotaseasons.com';
+
+    function submitted(event) {
+      event.preventDefault();
+      const url = google + site + '+' + query.value;
+      const win = window.open(url, '_blank');
+      win.focus();
+    }
+
+    form.addEventListener('submit', submitted);
+  </script>
+		
+	<!-- end of search bar -->	
+		
+	
+	  <div class= "container">
+	  <section>
+				<p class="menu0Current"><a href="http://minnesotaseasons.com/">Home</a></p>
+				<p class="menu0"><a href="Main/Destinations.html">Destinations</a></p>
+				<p class="menu0"><a href="http://minnesotaseasons.com/Main/Destinations.html">Species</a></p>
+				<p class="menu"><a href="Main/Amphibians.html">Amphibians</a></p>
+				<p class="menu"><a href="Main/Arachnids.html">Arachnids</a></p>
+				<p class="menu"><a href="Main/Bacteria.html">Bacteria, Viruses, and Other Pathogens</a></p>
+				<p class="menu"><a href="Main/Birds.html">Birds</a></p>
+				<p class="menu"><a href="Main/Myriapods.html">Centipedes and Millipedes</a></p>
+				<p class="menu"><a href="Main/Crustaceans.html">Crustaceans</a></p>
+				<p class="menu"><a href="Main/Fishes.html">Fishes</a></p>
+				<p class="menu"><a href="Main/Fungi_Lichen.html">Fungi and Lichens</a></p>
+				<p class="menu"><a href="Main/Insects.html">Insects</a></p>
+				<p class="menu"><a href="Main/Mammals.html">Mammals</a></p>
+				<p class="menu"><a href="Main/Plants.html">Plants</a></p>
+				<p class="menu"><a href="Main/Reptiles.html">Reptiles</a></p>
+				<p class="menu"><a href="Main/Slime_Molds.html">Slime Molds</a></p>
+				<p class="menu"><a href="Main/Snails.html">Snails and Slugs</a></p>
+				<p class="menu"><a href="Main/Springtails.html">Springtails</a></p>
+				<p class="menu"><a href="Main/Worms_and_Leeches.html">Worms and Leeches</a></p>
+				<p class="menu0"><a href="Main/Wallpapers.html">Wallpapers</a></p>
+				<p class="menu0"><a href="Main/Contributors.html">Contributors</a></p>
+				<p class="menu0"><a href="http://blog.minnesotaseasons.com/">Blog</a></p>
+				<p class="menu0"><a href="mailto:info@minnesotaseasons.com">Contact Us</a></p>
+				<hr>
+				<p><a href="https://www.facebook.com/Minnesotaseasons" target="_blank"><img src="http://minnesotaseasons.com/Images/PNG/FB_FindUsOnFacebook-114.png" alt="Facebook" width="114" height="29"></a></p>
+				<p><a href="https://www.pinterest.com/MinnesotaSeason/" target="_blank"><img src="http://minnesotaseasons.com/Images/PNG/Find_us_on_Pinterest.png" alt="Pinterest" width="124" height="30"></a></p>
+				<p><a href="https://twitter.com/MinnesotaSeason" target="_blank"><img src="http://minnesotaseasons.com/Images/PNG/Find_us_on_X.png" alt="X (formerly Twitter)" width="126" height="34"></a></p>
+			</section> <!--end of nav bar -->
+			
+			<section>
+				<h1 class= "double">Destinations</h1>
+				<img src="https://www.alltrails.com/_next/image?url=https%3A%2F%2Fimages.alltrails.com%2FeyJidWNrZXQiOiJhc3NldHMuYWxsdHJhaWxzLmNvbSIsImtleSI6InVwbG9hZHMvcGhvdG8vaW1hZ2UvOTI0MTc3MDkvZjU2ZmNmNWNiNmMyNDRmMDYxMzBjMzk1MWJlNmJhNGEuanBnIiwiZWRpdHMiOnsidG9Gb3JtYXQiOiJ3ZWJwIiwicmVzaXplIjp7IndpZHRoIjoxMDgwLCJoZWlnaHQiOjcwMCwiZml0IjoiY292ZXIifSwicm90YXRlIjpudWxsLCJqcGVnIjp7InRyZWxsaXNRdWFudGlzYXRpb24iOnRydWUsIm92ZXJzaG9vdERlcmluZ2luZyI6dHJ1ZSwib3B0aW1pc2VTY2FucyI6dHJ1ZSwicXVhbnRpc2F0aW9uVGFibGUiOjN9fX0%3D&w=3840&q=90">
+				<p>These are locations in Minnesota where native plants, birds, and other wildlife can be viewed. With very few exceptions, these destinations are open to the public.</p>
+				<p>Visitors can share their own photos, videos, plant and wildlife sightings, and other observations or comments.</p>
+			<hr>
+				<h1 class= "double">Species</h1>
+				<img src="https://extension.usu.edu/swaner/images/musk-thistle-tile.png">
+				<p>Native, naturalized, invasive, or simply planted—any plant growing outside of cultivation in Minnesota.</p>
+				<p>More than 900 plant pages include a profile, photos, a distribution map, a list of sightings by MinnesotaSeasons.com, and visitor sightings.</p>
+			<hr>
+				<h1 class= "double">Insects</h1>
+				<img src="https://www.butterfliesandmoths.org/sites/default/files/bamona_images/catocala-relicta-laporte-crop.jpg">
+				<p>Insects and arachnids found in Minnesota.</p>
+				<p>More than 1,100 insect and arachnid pages include a profile, photos, a distribution map, a list of sightings by MinnesotaSeasons.com, and visitor sightings.</p>
+			<hr>
+			</section> 
+		
+			<section>
+				<h1 class= "double">Wildlife</h1>
+				<img src="https://val.vtecostudies.org/wp-content/uploads/2021/11/Screen-Shot-2021-11-04-at-3.09.00-PM.png">
+				<p>Birds and bears, snakes and squirrels, toads and turtles—wildlife found in Minnesota.</p>
+				<p>Wildlife pages include a profile, photos, a distribution map, a list of sightings by MinnesotaSeasons.com, and visitor sightings.</p>
+			<hr>
+				<h1 class= "double">Mushrooms, Lichens, and Other Fungi</h1>
+				<img src="https://media.greenmatters.com/brand-img/BcpmNHv1U/0x0/morel-mushrooms-1683054691163.jpg">
+				<p>Mushrooms, lichens, and other fungi found in Minnesota.</p>
+				<p>More than 200 fungi and lichen pages include a profile, photos, a distribution map, a list of sightings by MinnesotaSeasons.com, and visitor sightings.</p>
+			<hr>
+				<h1 class= "double">Wallpapers</h1>
+				<img src="https://lh6.googleusercontent.com/proxy/d8SzWuHmSR7CjTfaweI5OdV2wKSe18je_giNGm87PMu9nfAXir5tBKmtHNW0B0odgt4tki1oKZNBGwskFecOtALzrBrG7diwVqFSvgV-u_siliomvUIDlHR3NJ0mXl7_5jBhU_ISzZQARtr7WwKuKvcge19pjH5B3JPip4idZNxN8WGm4g1Rbl7ti2HUVVLsPq5GsOsFvjRXHis">
+				<p>Download free high resolution wallpapers (screen backgrounds). These are photos of destinations featured on MinnesotaSeasons.com. The wallpapers are grouped by ecological season. Each wallpaper is optimized for the screen resolutions used most often on desktops, laptops, and tablets.</p>
+			<hr>	
+			</section>
+			</div>
+			
+  </body>
+</html>

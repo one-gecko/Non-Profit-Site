@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minnesota Seasons-zebra jumper</title>
+	<style>
+			img  {
+		width: 100%;
+		height: auto;
+		max-height: 200px;  
+		object-fit: cover;
+		}
+		
+			.img {
+		width: 30%;
+		height: auto;
+		max-height: 700px;
+		}
+		
+		
+			section {
+		color: black;
+		padding: 20px;
+		margin: 20px;
+		margin-top: 30px;
+		background-image: url("https://wallpapers.com/images/featured/dark-wood-background-0cyh8iq1d71hnwi9.jpg");
+		border-radius: 2px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		text-align: center;
+		width: 70%;
+		}
+		
+		.title-box {
+            background-color: #412920; 
+            color: white; 
+            padding: 20px; 
+            max-width: 60%; 
+            margin: 20px auto; 
+            text-align: center; 
+            border-radius: 4px; 
+		}	
+		
+		a 		{
+			color: #e6ccb3;
+			font-family: Verdana;
+			font-size: 24px;
+			text-decoration: none;
+			margin-right:50px;
+		}	
+	a:hover {
+			color: #996633;
+			background-color: transparent;
+			text-decoration: underline;
+		}
+		
+		h1 {
+      margin: 2%;
+      font-size: 2.8em;
+	  font-family: Verdana;
+	  color: white;
+    }
+	
+	h2 {
+	color: white;
+	}
+	
+	.container {
+            display: grid;
+            grid-template-columns: 1fr 4fr 4fr;
+			gap: 1px;
+	}
+	
+	.double {border-style: double;
+			 border-width: 10px;
+			 border-color: black;
+			 padding: 20px;
+			}
+	
+	p {color: white;
+		font-size: 20px;
+	   }
+	   
+	   
+	/*search bar*/   
+	
+	   .search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+}
+
+input[type="text"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 25px 0 0 25px;  
+  outline: none;
+  width: 60%;
+  max-width: 400px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: 2px solid #ccc;
+  border-radius: 0 25px 25px 0; 
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+	</style>
+</head>
+  <body style="background-color:black;">
+      <img src = "https://www.exploreminnesota.com/sites/default/files/2019-09/Fall%20colors%20on%20the%20St.%20Louis%20River%20runs%20%20-%20william%20wensel%20%20%20EARLY%20to%20MID%20Duluth%20Area.jpg" alt= "top image">
+	  
+	  <header>
+		<div class="title-box">
+		<h1>Minnesota Seasons</h1>
+		<h2>zebra jumper <i>(Salticus scenicus)</i></h2>
+			<a href="#overview" onclick="return false;" class="selected">Overview</a></li>
+			<a href="#season" onclick="return false;">Season</a></li>
+			<a href="#recentUploads" onclick="return false;">Recent Uploads</a></li>
+			<a href="#newPages" onclick="return false;">New Pages</a></li>
+			<a href="#whatsNext" onclick="return false;">What‘s Next</a></li>
+		</div>
+		</header>
+		
+<!-- search bar -->
+		
+		<div class="search-container">
+    <form id="form">
+      <input type="text" id="query" placeholder="Search...">
+      <button type="submit">Search</button>
+    </form>
+  </div>
+
+  <script>
+    const form = document.getElementById('form');
+    const query = document.getElementById('query');
+    const google = 'https://www.google.com/search?q=site%3A+';
+    const site = 'minnesotaseasons.com';
+
+    function submitted(event) {
+      event.preventDefault();
+      const url = google + site + '+' + query.value;
+      const win = window.open(url, '_blank');
+      win.focus();
+    }
+
+    form.addEventListener('submit', submitted);
+  </script>
+		
+<!-- end of search bar -->
+		
+	  <div class= "container">
+	  <section>
+				<p class="menu0Current"><a href="http://minnesotaseasons.com/">Home</a></p>
+				<p class="menu0"><a href="Main/Destinations.html">Destinations</a></p>
+				<p class="menu0"><a href="http://minnesotaseasons.com/Main/Destinations.html">Species</a></p>
+				<p class="menu"><a href="Main/Amphibians.html">Amphibians</a></p>
+				<p class="menu"><a href="Main/Arachnids.html">Arachnids</a></p>
+				<p class="menu"><a href="Main/Bacteria.html">Bacteria, Viruses, and Other Pathogens</a></p>
+				<p class="menu"><a href="Main/Birds.html">Birds</a></p>
+				<p class="menu"><a href="Main/Myriapods.html">Centipedes and Millipedes</a></p>
+				<p class="menu"><a href="Main/Crustaceans.html">Crustaceans</a></p>
+				<p class="menu"><a href="Main/Fishes.html">Fishes</a></p>
+				<p class="menu"><a href="Main/Fungi_Lichen.html">Fungi and Lichens</a></p>
+				<p class="menu"><a href="Main/Insects.html">Insects</a></p>
+				<p class="menu"><a href="Main/Mammals.html">Mammals</a></p>
+				<p class="menu"><a href="Main/Plants.html">Plants</a></p>
+				<p class="menu"><a href="Main/Reptiles.html">Reptiles</a></p>
+				<p class="menu"><a href="Main/Slime_Molds.html">Slime Molds</a></p>
+				<p class="menu"><a href="Main/Snails.html">Snails and Slugs</a></p>
+				<p class="menu"><a href="Main/Springtails.html">Springtails</a></p>
+				<p class="menu"><a href="Main/Worms_and_Leeches.html">Worms and Leeches</a></p>
+				<p class="menu0"><a href="Main/Wallpapers.html">Wallpapers</a></p>
+				<p class="menu0"><a href="Main/Contributors.html">Contributors</a></p>
+				<p class="menu0"><a href="http://blog.minnesotaseasons.com/">Blog</a></p>
+				<p class="menu0"><a href="mailto:info@minnesotaseasons.com">Contact Us</a></p>
+				<hr>
+				<p><a href="https://www.facebook.com/Minnesotaseasons" target="_blank"><img src="http://minnesotaseasons.com/Images/PNG/FB_FindUsOnFacebook-114.png" alt="Facebook" width="114" height="29"></a></p>
+				<p><a href="https://www.pinterest.com/MinnesotaSeason/" target="_blank"><img src="http://minnesotaseasons.com/Images/PNG/Find_us_on_Pinterest.png" alt="Pinterest" width="124" height="30"></a></p>
+				<p><a href="https://twitter.com/MinnesotaSeason" target="_blank"><img src="http://minnesotaseasons.com/Images/PNG/Find_us_on_X.png" alt="X (formerly Twitter)" width="126" height="34"></a></p>
+			</section> <!--end of nav bar-->
+			
+			<section>
+				<h1 class= "double">Conservation Status</h1>
+				<img src="https://glenlivet-wildlife.co.uk/wp-content/uploads/2023/01/Salticus-scenicus-1024x682.jpg">
+				<p>	<b>IUCN Red List:</b> not listed</p>
+				<p><b>NatureServe:</b> NNR - Unranked</p>
+				<p> SNR - Unranked </p>
+				<p><b>Minnesota:</b> not listed</p>
+			<hr>
+				<h1 class= "double">Distribution</h1>
+				<img src="http://www.minnesotaseasons.com/Arachnids/Maps/Range_zebra_jumper.png" style="width: 180px;">
+				<p><b>Occurrence:</b> Common</p>
+				
+			<hr>
+				<h1 class= "double">Taxonomy</h1>
+				<p>	Class: Arachnida (arachnids)</p>
+				<p>Order: Araneae (spiders)</p>
+				<p>Suborder: Araneomorphae (typical spiders)</p>
+				<p>Infraorder: Entelegynae</p>
+				<p>Superfamily: Salticoidea</p>
+				<p>Family: Salticidae (jumping spiders)</p>
+				<p>Subfamily: Salticinae (typical jumping spiders)</p>
+				<p>Tribe: Salticini</p>
+				<p>Genus: Salticus (zebra spiders)</p>
+				<br>
+				<p>Common Names: zebra jumper, zebra jumping spider</p>
+			<hr>
+			</section> 
+		
+			<section>
+				<h1 class= "double">Description</h1>
+				<p>Zebra jumper is a small, common, easy to recognize jumping spider. It occurs across Europe and North America. It is common in Minnesota.</p>
+				<p>The female is ⅛″ to ¼″ (4 to 6.5 mm) long not including the legs. The male is a little smaller, 3 ⁄16″ to ¼″ (5 to 7 mm) long. The legs are ¼″ to 5 ⁄16″ (6 to 8 mm) long.</p>
+				<p>The plate covering the cephalothorax (carapace) is dark brown, about 1½ times longer than wide, and moderately convex when viewed from the side. The face is vertical. The jaw-like mouthparts (chelcerae) on the male are very long and project forward and outward. At the tip of each chelcera there is a long fang that fits into a groove under the chelcera when not extended. In the groove there is a single large tooth near the base of the fang, a smaller tooth one third from the base, and an even smaller one much further down. On the female the chelcerae are vertical and are normal in size. There are four pairs of eyes arranged in what appears to be three rows occupying a little less than half of the length of the carapace. The first row of four eyes, consisting of the anterior median eyes (AME) and anterior lateral eyes (ALE), is curved backward. The AME are the middle and forward-most pair of these. They are by far the largest of all of the eyes and can be moved. The AME are about twice as large as the ALE. The second row of two eyes are the posterior median eyes (PME). They are very small and are barely or not at all noticeable on most photos. The third row of eyes is the posterior lateral eyes (PLE). The PLE are set far back on the head and are almost exactly as far apart as the ALE. The plate on the face above the mouth (clypeus) is white. A white stripe extends along each lateral margin of the carapace from the clypeus to the rear margin. On the upper (dorsal) side, there is usually a white spot in the center just above the AME and a white spot behind each PLE.</p>
+				<p>The abdomen is brown and iridescent, with a white band at the base, two pairs of white oblique bands, and a little white at the tip near the spinnerets. On the female the abdomen is lighter and less iridescent. The legs on the male are pale with many dark rings and streaks. On the female they are less prominently marked.</p>
+				<h2>Size:</h2>
+				<p>	Female Body Length: ⅛″ to ¼″ (4 to 6.5 mm)</p>
+				<p>Male Body Length: ⅛″ to 3 ⁄16″ (4 to 5.5 mm)</p>
+				<p>Legspan: ¼″ to 5 ⁄16″ (6 to 8 mm)</p>
+			<hr>
+				<h1 class= "double">Glossary</h1>
+				<p><b>Carapace:</b> The hard, upper (dorsal), shell-like covering (exoskeleton) of the body or at least the thorax of many arthropods and of turtles and tortoises. On crustaceans, it covers the cephalothorax. On spiders, the top of the cephalothorax made from a series of fused sclerites.</p>
+				<p><b>Cephalothorax:</b> The front part of a spider’s body, composed of the head region and the thoracic area fused together. Eyes, legs, and antennae are attached to this part.</p>
+				<p><b>Chelicerae:</b> The pair of stout mouthparts, corresponding to jaws, in arachnids and other arthropods in the subphylum Chelicerata.</p>
+				<p><b>Clypeus:</b> On insects, a hardened plate on the face above the upper lip (labrum).</p>
+			<hr>	
+			</section>
+			</div>
+  </body>
+</html>
